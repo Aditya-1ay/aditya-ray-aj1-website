@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aditya Ray | Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b16;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #11162b;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #292f4d;
+        }
+
+        header h1 {
+            text-align: center;
+            color: #9b85ff;
+            margin-bottom: 12px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #9b85ff;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        .hero {
+            max-width: none;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #080b16, #171335);
+            padding: 40px 20px;
+        }
+
+        .hero h2 {
+            font-size: 52px;
+            color: #9b85ff;
+            margin-bottom: 15px;
+        }
+
+        .hero h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #c8cad5;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 25px;
+            background: #7c5cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #6545e8;
+        }
+
+        h2.section-title {
+            color: #9b85ff;
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            color: #c8cad5;
+            font-size: 17px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #11162b;
+            padding: 25px;
+            border-radius: 14px;
+            border: 1px solid #292f4d;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #7c5cff;
+        }
+
+        .card h3 {
+            color: #a99aff;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #c8cad5;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px 10px;
+            background: #263d2b;
+            color: #8ee49b;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .goal-box {
+            background: #11162b;
+            border-left: 5px solid #7c5cff;
+            padding: 25px;
+            border-radius: 10px;
+            color: #c8cad5;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background: #11162b;
+            padding: 25px;
+            color: #999;
+            border-top: 1px solid #292f4d;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 38px;
+            }
+
+            .hero h3 {
+                font-size: 21px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            h2.section-title {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Aditya Ray</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#goals">Goals</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+
+        <h2>Hello, I'm Aditya Ray</h2>
+
+        <h3>Student • CSE • Section AJ1</h3>
+
+        <p>
+            Welcome to my personal portfolio website.
+            I am interested in programming, technology,
+            web development and learning new skills
+            in computer science.
+        </p>
+
+        <a href="#about" class="button">
+            Explore My Portfolio
+        </a>
+
+    </section>
+
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p class="intro">
+            Hello! I'm Aditya Ray, a student from Section AJ1.
+            I am interested in technology, programming and
+            web development.
+        </p>
+
+        <br>
+
+        <p class="intro">
+            I enjoy learning how computers and software work
+            and improving my programming skills through practice.
+            I am currently building my knowledge of programming,
+            HTML and CSS.
+        </p>
+
+        <br>
+
+        <p class="intro">
+            This portfolio website is one of my projects.
+            It allows me to practice creating and designing
+            webpages using HTML and CSS.
+        </p>
+
+    </section>
+
+
+    <section id="skills">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>C Programming</h3>
+                <p>
+                    Learning programming fundamentals using C,
+                    including variables, data types, operators,
+                    conditions and loops.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>
+                    Learning how to create the structure of
+                    webpages using HTML elements, headings,
+                    paragraphs, links and sections.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>
+                    Learning how to style webpages using colors,
+                    layouts, spacing, borders and responsive
+                    design.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Problem Solving</h3>
+                <p>
+                    Practicing logical thinking and learning
+                    how to break programming problems into
+                    smaller and simpler steps.
+                </p>
+            </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:35px;">
+
+            <a href="languages.html" target="_blank" class="button">
+                Languages I'm Learning →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="projects">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A personal website created using HTML and
+                    CSS to introduce myself and display my
+                    interests, skills and projects.
+                </p>
+
+                <span class="tag">
+                    HTML + CSS
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>C Programming Practice</h3>
+
+                <p>
+                    Practice programs involving variables,
+                    operators, conditional statements,
+                    loops and mathematical calculations.
+                </p>
+
+                <span class="tag">
+                    C Language
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Future Projects</h3>
+
+                <p>
+                    I plan to create more projects as I learn
+                    programming, web development and other
+                    technologies.
+                </p>
+
+                <span class="tag">
+                    Coming Soon
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="goals">
+
+        <h2 class="section-title">My Goals</h2>
+
+        <div class="goal-box">
+
+            <p>
+                My goal is to improve my programming and web
+                development skills and gain experience by
+                creating useful projects.
+            </p>
+
+            <br>
+
+            <p>
+                I also want to learn more programming languages
+                and technologies as I progress in computer
+                science.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">
+            Thank You for Visiting
+        </h2>
+
+        <p class="intro">
+            Thank you for visiting my portfolio website.
+            I hope you enjoyed learning a little about me,
+            my interests and my projects.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Aditya Ray | Section AJ1
+        </p>
+
+    </footer>
+
+</body>
+</html>
